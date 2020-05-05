@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Beer App</title>
+
+    <link rel="icon" href="photos/beer-icon.png" type="image/gif" sizes="16x16">
+    <link rel="stylesheet" href="css/home_css.css" type="text/css">
+    <link rel="stylesheet" href="css/recipe_cards.css" type="text/css">
+    <link rel="stylesheet" href="css/random.css" type="text/css">
+    <link rel="stylesheet" href="css/small_devices.css" type="text/css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!-- website for google icons library https://material.io/resources/icons/?style=baseline -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+    <!-- Created and ready to go on the DOM -->
+    <img id="logo" src="photos/Logo.png" alt="" class="grow_shadow default" onclick="openPage('home')">
+
+    <!-- Part of the navigation where location of the navbar lives on the webpage -->
+    <div class="beer_nav_bg">
+        <!-- the base of the navigation. Controls the space in which the navigation lives -->
+        <div class="nav" ;>
+
+            <!-- Main functional part of nav-->
+
+            <div class="nav_othpage float_shadow on_page chooseARecipe">
+                <div class="nav_othpageslink" onclick="openPage('chooseARecipe')" href="">
+                    <!-- might come back to picture <div>
+                        <img src="beer_mug_clipart.png" alt="beer mug" style="display: block; width: 50px; height:50px; margin: auto;">
+                    </div> -->
+                    <div>
+                        <b><span class="nav_icons"> CHOOSE A RECIPE</span></b>
+                    </div>
+                </div>
+            </div>
+            <div class="nav_othpage float_shadow on_page createYourOwnRecipe">
+                <div class="nav_othpageslink" onclick="openPage('createYourOwnRecipe')" href="">
+                    <div>
+                        <b><span class="nav_icons">CREATE YOUR OWN RECIPE</span></b>
+                    </div>
+                </div>
+            </div>
+            <div class="nav_othpage float_shadow on_page calculators">
+                <div class="nav_othpageslink" onclick="openPage('calculators')" href="">
+                    <div>
+                        <b><span class="nav_icons">CALCULATORS</span></b>
+                    </div>
+                </div>
+            </div>
+            <div class="nav_othpage float_shadow on_page brewingMaterials">
+                <div class="nav_othpageslink" onclick="openPage('brewingMaterials')" href="">
+                    <div>
+                        <b><span class="nav_icons">BREWING MATERIALS</span></b>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <!-- The Home Page starts here -->
+    <!-- Now all Dynamic -->
+
+    <!-- The Choose a Recipe Page starts here -->
+    <!-- Now all Dynamic -->
+
+    <!-- The Create Your Own Recipe Page starts here -->
+    <div id="createYourOwnRecipe" class="tabcontent">
+        <div id="createEditRecipePage" style="display: block;">
+            <div class="pageHeaders">
+                Welcome! Here We Create and Edit Your Own Recipes!
+            </div>
+
+            <!-- Start of where all the recipe cards will begin to display -->
+            <!-- ========================================================= -->
+            <div id="recipeCardNum" class="recipeCardsGrid">
+
+                <!-- Dynamic recipe cards are inserted here-->
+
+            </div>
+        </div>
+
+        <!-- This Is the Side Navpart of the create recipes page -->
+        <div id="createYourOwnRecipeSideNavId" class="sidenav">
+            <div style="padding-top: 10px;" class="sidenavValues">
+                <div style="cursor: pointer" onclick="toggleElementsOnCreatePage('sidenavGrains')">
+                    <i style="display: inline;" class="material-icons sidenavGrains">add</i>
+                    <i style="display: none;" class="material-icons sidenavGrains">remove</i>
+                    <span>Grains</span>
+                </div>
+                <div id="sidenavGrains" class="sidenavGrains" style="display: none;">
+                    <!-- Dynamic <ul> is inserted here-->
+                </div>
+                <hr>
+            </div>
+            <div class="sidenavValues">
+                <div style="cursor: pointer" onclick="toggleElementsOnCreatePage('sidenavHops')">
+                    <i style="display: inline;" class="material-icons sidenavHops">add</i>
+                    <i style="display: none;" class="material-icons sidenavHops">remove</i>
+                    <span>Hops</span>
+                </div>
+                <div id="sidenavHops" class="sidenavHops" style="display: none;">
+                    <!-- Dynamic <ul> is inserted here-->
+                </div>
+                <hr>
+            </div>
+            <div class="sidenavValues">
+                <div style="cursor: pointer" onclick="toggleElementsOnCreatePage('sidenavYeast')">
+                    <i style="display: inline;" class="material-icons sidenavYeast">add</i>
+                    <i style="display: none;" class="material-icons sidenavYeast">remove</i>
+                    <span>Yeast</span>
+                </div>
+                <div id="sidenavYeast" class="sidenavYeast" style="display: none;">
+                    <!-- Dynamic <ul> is inserted here-->
+                </div>
+                <hr>
+            </div>
+            <div class="sidenavValues">
+                <div style="cursor: pointer" onclick="toggleElementsOnCreatePage('sidenavPrimingSugar')">
+                    <i style="display: inline;" class="material-icons sidenavPrimingSugar">add</i>
+                    <i style="display: none;" class="material-icons sidenavPrimingSugar">remove</i>
+                    <span>Priming Sugar</span>
+                </div>
+                <div id="sidenavPrimingSugar" class="sidenavPrimingSugar" style="display: none;">
+                    <!-- Dynamic <ul> is inserted here-->
+                </div>
+                <hr>
+            </div>
+            <div class="sidenavValues">
+                <div style="cursor: pointer" onclick="toggleElementsOnCreatePage('sidenavExtras')">
+                    <i style="display: inline;" class="material-icons sidenavExtras">add</i>
+                    <i style="display: none;" class="material-icons sidenavExtras">remove</i>
+                    <span>Extras</span>
+                </div>
+                <div id="sidenavExtras" class="sidenavExtras" style="display: none;">
+                    <!-- Dynamic <ul> is inserted here-->
+                </div>
+                <hr>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- The Calculators Page starts here -->
+    <!-- Now all Dynamic -->
+
+    <!-- The Brewing Materials Page starts here -->
+    <div id="brewingMaterials" class="tabcontent">
+
+        <div class="pageHeaders">
+            What Brewing Materials Should You Use?
+        </div>
+
+        <!-- <div id="materialPage" style="display: none; text-align: center;"> </div> -->
+
+        <div class="grid_columns_1">
+
+            <div class="materials">
+                <div style="padding-left: 20px;">
+                    <i style="cursor: pointer;" class="material-icons grains" onclick="treeClick('grains')">add_box</i>
+                    <i style="cursor: pointer; display: none;" class="material-icons grains"
+                        onclick="treeClick('grains')">remove_circle</i>
+                    <span>Grains </span>
+                </div>
+            </div>
+            <div class="grains" style="display: none; background-color: white;">
+                <input type="text" id="mySearchFunction" class="input1" onkeyup="searchFunction()"
+                    placeholder="Search for grains.." title="Type in a name"> <br>
+                <table id="grainsTable">
+                    <tr>
+                        <th><u>Name</u></th>
+                        <th><u>Yield (%)</u></th>
+                        <th><u>Specific Gravity</u></th>
+                        <th><u>PPG (per Pound per Gallon)</u></th>
+                        <th><u>Typical Max Usage (%)</u></th>
+                        <th><u>Color (&#176L)</u></th>
+                        <th><u>Edit/Save</u></th>
+                    </tr>
+                    <tr id="newDataGrains">
+                        <th><input class="input1" id="grain_type" type="text"></th>
+                        <th><input class="input1" id="grain_yield" type="text"></th>
+                        <th><input class="input1" id="grain_specific_gravity" type="text"></th>
+                        <th><input class="input1" id="grain_ppg" type="text"></th>
+                        <th><input class="input1" id="grain_max_usage" type="text"></th>
+                        <th><input class="input1" id="grain_color" type="text"></th>
+                        <th><button onclick="sendData('newDataGrains', 'grains')">Save</button></th>
+                    </tr>
+                </table>
+
+            </div>
+
+            <div class="materials">
+                <div style="padding-left: 20px;">
+                    <i style="cursor: pointer;" class="material-icons hops" onclick="treeClick('hops')">add_box</i>
+                    <i style="cursor: pointer; display: none;" class="material-icons hops"
+                        onclick="treeClick('hops')">remove_circle</i>
+                    <span>Hops </span>
+                </div>
+            </div>
+            <div class="hops" style="display: none;">
+                <table id="hopsTable">
+                    <tr>
+                        <th><u>Name</u></th>
+                        <th><u>Alpha (%)</u></th>
+                        <th><u>Format (Pellet/Whole Plug)</u></th>
+                        <th><u>Aroma and Notes</u></th>
+                        <th><u>Edit/Save</u></th>
+                    </tr>
+                    <tr id="newDataHops">
+                        <th><input class="input1" id="hop_name" type="text"></th>
+                        <th><input class="input1" id="hop_alpha_acidity" type="text"></th>
+                        <th><input class="input1" id="hop_form" type="text"></th>
+                        <th><input class="input1" id="hop_aroma_and_notes" type="text"></th>
+                        <th><button onclick="sendData('newDataHops', 'hops')">Save</button></th>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="materials">
+                <div style="padding-left: 20px;">
+                    <i style="cursor: pointer;" class="material-icons Yeast" onclick="treeClick('Yeast')">add_box</i>
+                    <i style="cursor: pointer; display: none;" class="material-icons Yeast"
+                        onclick="treeClick('Yeast')">remove_circle</i>
+                    <span>Yeast </span>
+                </div>
+            </div>
+            <div class="Yeast" style="display: none;">
+                <table id="yeastTable">
+                    <tr>
+                        <th><u>Name</u></th>
+                        <th><u>Type (Ale, lager)</u></th>
+                        <th><u>Liquid/Dry</u></th>
+                        <th><u>Min temp</u></th>
+                        <th><u>Max temp</u></th>
+                        <th><u>Attenuation (%)</u></th>
+                        <th><u>Dosage</u></th>
+                        <th><u>Edit/Save</u></th>
+                    </tr>
+                    <tr id="newDataYeast">
+                        <th><input class="input1" id="yeast_name" type="text"></th>
+                        <th><input class="input1" id="yeast_type" type="text"></th>
+                        <th><input class="input1" id="yeast_form" type="text"></th>
+                        <th><input class="input1" id="yeast_min_temp" type="text"></th>
+                        <th><input class="input1" id="yeast_max_temp" type="text"></th>
+                        <th><input class="input1" id="yeast_attenuation" type="text"></th>
+                        <th><input class="input1" id="yeast_dosage" type="text"></th>
+                        <th><button onclick="sendData('newDataYeast', 'yeast')">Save</button></th>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="materials">
+                <div style="padding-left: 20px;">
+                    <i style="cursor: pointer;" class="material-icons Priming_Sugar"
+                        onclick="treeClick('Priming_Sugar')">add_box</i>
+                    <i style="cursor: pointer; display: none;" class="material-icons Priming_Sugar"
+                        onclick="treeClick('Priming_Sugar')">remove_circle</i>
+                    <span>Priming Sugar </span>
+                </div>
+            </div>
+            <div class="Priming_Sugar" style="display: none;">
+                <table id="primingSugarTable">
+                    <tr>
+                        <th><u>Name</u></th>
+                        <th><u>Notes</u></th>
+                        <th><u>Edit/Save</u></th>
+                    </tr>
+                    <tr id="newDataPrimingSugar">
+                        <th><input class="input1" id="priming_sugars_name" type="text"></th>
+                        <th><input class="input1" id="priming_sugars_notes" type="text"></th>
+                        <th><button onclick="sendData('newDataPrimingSugar', 'priming_sugars')">Save</button></th>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="materials">
+                <div style="padding-left: 20px;">
+                    <i style="cursor: pointer;" class="material-icons Extras" onclick="treeClick('Extras')">add_box</i>
+                    <i style="cursor: pointer; display: none;" class="material-icons Extras"
+                        onclick="treeClick('Extras')">remove_circle</i>
+                    <span>Extras</span>
+                </div>
+            </div>
+            <div class="Extras" style="display: none;">
+                <table id="extrasTable">
+                    <tr>
+                        <th><u>Name</u></th>
+                        <th><u>Notes</u></th>
+                        <th><u>Edit/Save</u></th>
+                    </tr>
+                    <tr id="newDataExtras">
+                        <th><input class="input1" id="extras_name" type="text"></th>
+                        <th><input class="input1" id="extras_notes" type="text"></th>
+                        <th><button onclick="sendData('newDataExtras', 'extras')">Save</button></th>
+                    </tr>
+                </table>
+            </div>
+
+        </div>
+    </div>
+    <!-- Check Settings before doing anything -->
+    <script src="settings/js_settings.js"></script>
+
+    <!-- Load the JS Data for purpose of NOT using PHP and Mysql -->
+    <script src="js_data/js_load_data.js"></script>
+
+    <script src="js/create_your_own_recipe_page.js"></script>
+    <script src="js/page_nav_functions.js"></script>
+    <script src="js/brewing_materials_page.js"></script>
+    <script src="js/calculators_page.js"></script>
+    <script src="js/choose_a_recipe_page.js"></script>
+    <script src="js/home_page.js"></script>
+    <script src="js/onload_functions.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+body {
+    margin: 0px;
+}
+
+.grid_columns_1 {
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: 10px;
+}
+
+.grid_columns_2 {
+    display: grid;
+    grid-template-columns: 50% auto;
+    grid-gap: 10px;
+}
+
+.grid_columns_3 {
+    display: grid;
+    grid-template-columns: 32% 32% 32%;
+    grid-gap: 15px;
+    padding: 15px;
+}
+
+.mpage_grid_columns_3 {
+    display: grid;
+    grid-template-columns: 450px 450px 450px;
+    grid-gap: 20px;
+    justify-content: center;
+    height: 200px;
+}
+
+.calcGrid {
+    display: grid;
+    grid-template-columns: 50% auto;
+    grid-gap: 10px;
+}

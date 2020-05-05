@@ -1,0 +1,55 @@
+@media screen and (max-width: 600px) {
+    #logo {
+        /* height: auto; */
+        width: 75px;
+        /* position: fixed; */
+        left: 5px;
+        /* z-index: 11; */
+        /* cursor: pointer; */
+    }
+
+    #createYourOwnRecipeSideNavId {
+        display: none;
+    }
+
+    #recipeCardNum {
+        margin-left: 0px;
+    }
+
+    .recipeCardsGrid {
+        /* display: grid; */
+        grid-template-columns: auto;
+        /* padding: 15px; */
+        /* grid-gap: 15px; */
+    }
+
+    .pageHeaders {
+        /* text-align: center;  */
+        /* padding: 15px 0;  */
+        margin-left: 0px; 
+        /* margin-right: 0;  */
+        height: 40px; 
+        font-size: 20px; 
+        /* font-weight: bold; */
+    }
+
+    .nav_othpage {
+        /* font-family: myFirstFont; */
+        /* z-index: 4; */
+        /* text-shadow: 2px 2px 2px black; */
+        padding: 2px;
+        font-size: 12px;
+        /* text-align: center; */
+        /* margin: auto; */
+        /* background-color: #615550; */
+        /* color: whitesmoke; */
+        /* cursor: pointer; */
+    }
+
+    .calcGrid {
+        display: grid;
+        grid-template-columns: auto;
+        grid-gap: 10px;
+    }
+
+}
