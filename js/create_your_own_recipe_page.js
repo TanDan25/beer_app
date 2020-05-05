@@ -518,8 +518,6 @@ function saveRecipeEdit(recipeID, editORecipe, editIRecipe, className) {
 }
 
 
-}
-
 // Used when editing a recipe. It allows add more ingreidents to your recipe and what not.
 function addSelectToRecipe(editTagIdName, className) {
 
