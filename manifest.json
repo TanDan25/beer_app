@@ -1,0 +1,22 @@
+{
+    "name": "Beer App",
+    "short_name": "Beeeer!",
+    "description": "This app helps you with homebrew",
+    "icons": [
+        {
+            "src": "photos/beer-icon.png",
+            "sizes": "32x32",
+            "type": "image/png"
+        },
+        {
+            "src": "photos/beer-icon.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "start_url": ".",
+    "orientation": "portrait",
+    "display": "fullscreen",
+    "theme_color": "#B12A34",
+    "background_color": "#B12A34"
+}
