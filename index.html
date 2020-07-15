@@ -1,5 +1,22 @@
 <!DOCTYPE html>
 <html>
+    
+    <script>
+if('serviceWorker' in navigator) {
+    // Test to see if service worker is supported
+    // console.log('Servicer worker supported!');
+
+    window.addEventListener('load',  loadServiceWorker());
+}
+
+function loadServiceWorker() {
+    navigator.serviceWorker
+        .register('./sw.js')
+        .then(reg => console.log('Service Worker Registered'))
+        .catch(err => console.log(`Service Worker: Error: ${err}`))
+}
+
+</script> 
 
 <head>
     <title>Beer App</title>
